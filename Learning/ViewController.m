@@ -52,7 +52,7 @@
             imageView.image = [UIImage imageNamed:@"yellowCard"];
             break;
       
-    }
+    } //not going to work for what i want
 
 }
 
@@ -69,6 +69,8 @@
 
 - (IBAction)whiteButton:(id)sender forEvent:(UIEvent *)event {
 }
+
+
 - (IBAction)pinkButton:(id)sender forEvent:(UIEvent *)event {
 }
 - (IBAction)blackButton:(id)sender forEvent:(UIEvent *)event {
