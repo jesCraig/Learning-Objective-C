@@ -8,8 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    IBOutlet UIImageView *imageView;
+}
 
+-(IBAction)randomize:(id)sender;
+
+
+- (IBAction)whiteButton:(id)sender;
+- (IBAction)pinkButton:(id)sender;
+- (IBAction)blackButton:(id)sender;
+- (IBAction)greenButton:(id)sender;
+- (IBAction)purpleButton:(id)sender;
+- (IBAction)yellowButton:(id)sender;
+- (IBAction)blueButton:(id)sender;
+- (IBAction)redButton:(id)sender;
+- (IBAction)orangeButton:(id)sender;
+- (IBAction)brownButton:(id)sender;
 
 @end
 
