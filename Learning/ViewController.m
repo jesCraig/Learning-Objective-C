@@ -59,6 +59,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    imagesArray = [[NSMutableArray alloc] initWithObjects:@"yellowCard",@"pinkCard",@"blueCard",nil];
 }
 
 
@@ -67,28 +68,28 @@
 
 
 
-- (IBAction)whiteButton:(id)sender forEvent:(UIEvent *)event {
+- (IBAction)whiteButton:(id)sender {
 }
 
 
-- (IBAction)pinkButton:(id)sender forEvent:(UIEvent *)event {
+- (IBAction)pinkButton:(id)sender {
 }
-- (IBAction)blackButton:(id)sender forEvent:(UIEvent *)event {
+- (IBAction)blackButton:(id)sender {
 }
-- (IBAction)greenButton:(id)sender forEvent:(UIEvent *)event {
+- (IBAction)greenButton:(id)sender {
 }
-- (IBAction)purpleButton:(id)sender forEvent:(UIEvent *)event {
+- (IBAction)purpleButton:(id)sender {
 }
-- (IBAction)yellowButton:(id)sender forEvent:(UIEvent *)event {
+- (IBAction)yellowButton:(id)sender {
 }
-- (IBAction)blueButton:(id)sender forEvent:(UIEvent *)event {
+- (IBAction)blueButton:(id)sender {
 }
 
-- (IBAction)redButton:(id)sender forEvent:(UIEvent *)event {
+- (IBAction)redButton:(id)sender {
 }
-- (IBAction)orangeButton:(id)sender forEvent:(UIEvent *)event {
+- (IBAction)orangeButton:(id)sender {
 }
-- (IBAction)brownButton:(id)sender forEvent:(UIEvent *)event {
+- (IBAction)brownButton:(id)sender {
 }
 
 

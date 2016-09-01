@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E1CE9D71D776AA200218D99 /* Images.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1CE9D61D776AA200218D99 /* Images.m */; };
 		6E6670661D73CE2500B57B46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6670651D73CE2500B57B46 /* main.m */; };
 		6E6670691D73CE2500B57B46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6670681D73CE2500B57B46 /* AppDelegate.m */; };
 		6E66706C1D73CE2500B57B46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E66706B1D73CE2500B57B46 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E1CE9D51D776AA200218D99 /* Images.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Images.h; sourceTree = "<group>"; };
+		6E1CE9D61D776AA200218D99 /* Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Images.m; sourceTree = "<group>"; };
 		6E6670611D73CE2500B57B46 /* Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6670651D73CE2500B57B46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E6670671D73CE2500B57B46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				6E6670671D73CE2500B57B46 /* AppDelegate.h */,
 				6E6670681D73CE2500B57B46 /* AppDelegate.m */,
 				6E66706A1D73CE2500B57B46 /* ViewController.h */,
+				6E1CE9D51D776AA200218D99 /* Images.h */,
+				6E1CE9D61D776AA200218D99 /* Images.m */,
 				6E66706B1D73CE2500B57B46 /* ViewController.m */,
 				6E66706D1D73CE2500B57B46 /* Main.storyboard */,
 				6E6670701D73CE2500B57B46 /* Assets.xcassets */,
@@ -272,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E66706C1D73CE2500B57B46 /* ViewController.m in Sources */,
+				6E1CE9D71D776AA200218D99 /* Images.m in Sources */,
 				6E6670691D73CE2500B57B46 /* AppDelegate.m in Sources */,
 				6E6670661D73CE2500B57B46 /* main.m in Sources */,
 			);

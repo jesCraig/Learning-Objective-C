@@ -10,7 +10,9 @@
 
 @interface ViewController : UIViewController {
     IBOutlet UIImageView *imageView;
+    NSMutableArray *imagesArray;
 }
+
 
 -(IBAction)randomize:(id)sender;
 
