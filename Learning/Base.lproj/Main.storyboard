@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uZq-hU-fVI">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -14,9 +14,12 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rMh-kE-qw1">
+                                <rect key="frame" x="180" y="86" width="240" height="190"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="blue-splat" translatesAutoresizingMaskIntoConstraints="NO" id="CDs-6N-wGM">
                                 <rect key="frame" x="31" y="469" width="100" height="100"/>
                             </imageView>
@@ -43,6 +46,9 @@
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="yellow-splat" translatesAutoresizingMaskIntoConstraints="NO" id="cb9-Fe-kHv">
                                 <rect key="frame" x="473" y="343" width="100" height="100"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="red-splat" translatesAutoresizingMaskIntoConstraints="NO" id="PH4-Vs-L51">
+                                <rect key="frame" x="332" y="469" width="100" height="100"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kc5-uZ-uXZ" userLabel="greenButton">
                                 <rect key="frame" x="211" y="372" width="46" height="30"/>
@@ -72,9 +78,6 @@
                                     <action selector="randomize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SWD-2w-azT"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="red-splat" translatesAutoresizingMaskIntoConstraints="NO" id="PH4-Vs-L51">
-                                <rect key="frame" x="332" y="469" width="100" height="100"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr4-Yc-ug4" userLabel="whiteButton">
                                 <rect key="frame" x="58" y="246" width="46" height="30"/>
                                 <state key="normal" title="WHITE"/>
@@ -110,9 +113,6 @@
                                     <action selector="randomize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ycw-Wt-GaR"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rMh-kE-qw1">
-                                <rect key="frame" x="180" y="28" width="240" height="190"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0Q-XG-a9a" userLabel="yellowButton">
                                 <rect key="frame" x="500" y="372" width="46" height="30"/>
                                 <state key="normal" title="YELLOW"/>
@@ -120,16 +120,52 @@
                                     <action selector="randomize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="16V-fk-dG4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cc2-Eh-fHr">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="uZq-hU-fVI" kind="show" id="HoV-nN-cGk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="imageView" destination="rMh-kE-qw1" id="3Fr-hs-BEY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210" y="318"/>
+            <point key="canvasLocation" x="967" y="201"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZKw-RQ-A9W">
+            <objects>
+                <viewController id="uZq-hU-fVI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ib0-CL-ZUT"/>
+                        <viewControllerLayoutGuide type="bottom" id="o5N-b2-6k9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ANA-ak-2fM">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqA-qJ-4df">
+                                <rect key="frame" x="109" y="468" width="46" height="30"/>
+                                <state key="normal" title="Colors"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="6IJ-rO-vtG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTo-5j-f5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-193" y="116"/>
         </scene>
     </scenes>
     <resources>
