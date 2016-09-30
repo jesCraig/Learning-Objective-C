@@ -11,7 +11,7 @@
 		6E6670661D73CE2500B57B46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6670651D73CE2500B57B46 /* main.m */; };
 		6E6670691D73CE2500B57B46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6670681D73CE2500B57B46 /* AppDelegate.m */; };
 		6E66706C1D73CE2500B57B46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E66706B1D73CE2500B57B46 /* ViewController.m */; };
-		6E66706F1D73CE2500B57B46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E66706D1D73CE2500B57B46 /* Main.storyboard */; };
+		6E66706F1D73CE2500B57B46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E66706D1D73CE2500B57B46 /* Main.storyboard */; settings = {ASSET_TAGS = (0, ); }; };
 		6E6670711D73CE2500B57B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6670701D73CE2500B57B46 /* Assets.xcassets */; };
 		6E6670741D73CE2500B57B46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6670721D73CE2500B57B46 /* LaunchScreen.storyboard */; };
 		6E66707F1D73CE2500B57B46 /* LearningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E66707E1D73CE2500B57B46 /* LearningTests.m */; };
@@ -207,7 +207,10 @@
 		6E6670591D73CE2400B57B46 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				KnownAssetTags = (
+					0,
+				);
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Jessica Craig";
 				TargetAttributes = {
 					6E6670601D73CE2400B57B46 = {
@@ -348,8 +351,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -393,8 +398,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
