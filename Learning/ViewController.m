@@ -19,6 +19,7 @@
 //to match the two the image in the imageView and the color at the bottom of the screen
 //set a variable to each picture and to the corresponding color...then compare that with each other
 -(IBAction)randomize:(id)sender{
+    //randomize the images at top of screen
     int randomimages = rand()% 10;
     switch (randomimages) {
         case 0:
@@ -56,6 +57,36 @@
 
 }
 
+
+
+
+- (IBAction)whiteButton:(id)sender {
+}
+
+
+- (IBAction)pinkButton:(id)sender {
+}
+- (IBAction)blackButton:(id)sender {
+}
+- (IBAction)greenButton:(id)sender {
+}
+- (IBAction)purpleButton:(id)sender {
+}
+- (IBAction)yellowButton:(id)sender {
+}
+- (IBAction)blueButton:(id)sender {
+}
+
+- (IBAction)redButton:(id)sender {
+}
+- (IBAction)orangeButton:(id)sender {
+}
+- (IBAction)brownButton:(id)sender {
+}
+
+- (IBAction)greyButton:(id)sender {
+}
+
 - (void)viewDidLoad
 {
     red = 0.0/255.0;
@@ -67,7 +98,7 @@
     [super viewDidLoad];
 }
 
-//Drawing Code
+//Drawing Code------------------------------------------------------------------------------------------------------------
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     mouseSwiped = NO;
@@ -125,41 +156,6 @@
 
 
 
-
-
-- (IBAction)whiteButton:(id)sender {
-}
-
-
-- (IBAction)pinkButton:(id)sender {
-}
-- (IBAction)blackButton:(id)sender {
-}
-- (IBAction)greenButton:(id)sender {
-}
-- (IBAction)purpleButton:(id)sender {
-}
-- (IBAction)yellowButton:(id)sender {
-}
-- (IBAction)blueButton:(id)sender {
-}
-
-- (IBAction)redButton:(id)sender {
-}
-- (IBAction)orangeButton:(id)sender {
-}
-- (IBAction)brownButton:(id)sender {
-}
-
-- (IBAction)greyButton:(id)sender {
-}
-
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (IBAction)pencilPressed:(id)sender {
         
@@ -230,4 +226,19 @@
     blue = 255.0/255.0;
     opacity = 1.0;
 }
+// End Drawing Code------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 @end
