@@ -18,74 +18,18 @@
 
 //to match the two the image in the imageView and the color at the bottom of the screen
 //set a variable to each picture and to the corresponding color...then compare that with each other
--(IBAction)randomize:(id)sender{
-    //randomize the images at top of screen
-    int randomimages = rand()% 10;
-    switch (randomimages) {
-        case 0:
-            imageView.image = [UIImage imageNamed:@"brownCard"];
-            break;
-        case 1:
-            imageView.image = [UIImage imageNamed:@"redCard"];
-            break;
-        case 2:
-            imageView.image = [UIImage imageNamed:@"orangeCard"];
-            break;
-        case 3:
-            imageView.image = [UIImage imageNamed:@"blackCard"];
-            break;
-        case 4:
-            imageView.image = [UIImage imageNamed:@"whiteCard"];
-            break;
-        case 5:
-            imageView.image = [UIImage imageNamed:@"purpleCard"];
-            break;
-        case 6:
-            imageView.image = [UIImage imageNamed:@"greenCard"];
-            break;
-        case 7:
-            imageView.image = [UIImage imageNamed:@"blueCard"];
-            break;
-        case 8:
-            imageView.image = [UIImage imageNamed:@"pinkCard"];
-            break;
-        case 9:
-            imageView.image = [UIImage imageNamed:@"yellowCard"];
-            break;
-      
-    } //not going to work for what i want
 
-}
+    
+
+
+
+//NSArray * images = [[NSArray alloc] initWithObjects:@"image1.png",@"image2.png",@"image3.png",@"image4.png",@"image5.png",nil];
 
 
 
 
-- (IBAction)whiteButton:(id)sender {
-}
 
-
-- (IBAction)pinkButton:(id)sender {
-}
-- (IBAction)blackButton:(id)sender {
-}
-- (IBAction)greenButton:(id)sender {
-}
-- (IBAction)purpleButton:(id)sender {
-}
-- (IBAction)yellowButton:(id)sender {
-}
-- (IBAction)blueButton:(id)sender {
-}
-
-- (IBAction)redButton:(id)sender {
-}
-- (IBAction)orangeButton:(id)sender {
-}
-- (IBAction)brownButton:(id)sender {
-}
-
-- (IBAction)greyButton:(id)sender {
-}
+//Drawing Code------------------------------------------------------------------------------------------------------------
 
 - (void)viewDidLoad
 {
@@ -98,7 +42,6 @@
     [super viewDidLoad];
 }
 
-//Drawing Code------------------------------------------------------------------------------------------------------------
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     mouseSwiped = NO;
@@ -217,14 +160,14 @@
 }
 
 - (IBAction)eraserPressed:(id)sender {
-    self.mainView.image = nil;
-}
-
-- (IBAction)resetPressed:(id)sender {
     red = 255.0/255.0;
     green = 255.0/255.0;
     blue = 255.0/255.0;
     opacity = 1.0;
+}
+
+- (IBAction)resetPressed:(id)sender {
+    self.mainView.image = nil;
 }
 // End Drawing Code------------------------------------------------------------------------------------------------------------
 
