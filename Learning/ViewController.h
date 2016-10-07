@@ -37,6 +37,8 @@
 
 
 //Color matching
+- (IBAction)colorButtonPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *colorImage;
 
 @end
 

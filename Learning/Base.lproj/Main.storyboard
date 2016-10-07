@@ -31,8 +31,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="blueButton" image="blue-splat"/>
                                 <connections>
-                                    <action selector="blueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7Q-IU-TD9"/>
-                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t7c-FS-PO8"/>
+                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PBl-ng-ccJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NZG-rI-Df2">
@@ -40,8 +39,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="brownButton" image="brown-splat"/>
                                 <connections>
-                                    <action selector="brownButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LsD-gT-rcI"/>
-                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TjE-md-emc"/>
+                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IpB-ve-Zf1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wMK-xY-Uym">
@@ -49,8 +47,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="greenButton" image="green-splat"/>
                                 <connections>
-                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9nn-oV-dHV"/>
-                                    <action selector="greenButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KCG-wa-TaY"/>
+                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hn2-nA-Tqu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Hzm-NN-YqO">
@@ -58,8 +55,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="orangeButton" image="orange-splat"/>
                                 <connections>
-                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ab-9X-h9i"/>
-                                    <action selector="orangeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KVH-uE-GeQ"/>
+                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="38V-u0-xfs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nv8-OS-Mos">
@@ -67,8 +63,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="pinkButton" image="pink-splat"/>
                                 <connections>
-                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7k-tV-UXf"/>
-                                    <action selector="pinkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DQk-NY-EA9"/>
+                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C1l-lB-PGi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kHJ-Ch-MOn">
@@ -76,8 +71,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="purpleButton" image="purple-splat"/>
                                 <connections>
-                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UKG-h4-ZDu"/>
-                                    <action selector="purpleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5d7-pp-dLe"/>
+                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CK7-RD-xZS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="s1n-b7-5Vz">
@@ -85,8 +79,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="redButton" image="red-splat"/>
                                 <connections>
-                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W55-ZM-KMg"/>
-                                    <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Baj-OO-afB"/>
+                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5fT-Rb-MhU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d1q-km-Jkv">
@@ -94,8 +87,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="whiteButton" image="white-splat"/>
                                 <connections>
-                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Gr-i4-FOV"/>
-                                    <action selector="whiteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VKR-N5-7OO"/>
+                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uIW-GE-TAf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tUF-tG-VPf">
@@ -103,8 +95,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="yellowButton" image="yellow-splat"/>
                                 <connections>
-                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rhm-lX-k9S"/>
-                                    <action selector="yellowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ouq-Az-JYk"/>
+                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="79I-id-eaU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1LY-BF-z3F">
@@ -112,14 +103,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="blackButton" image="black-splat"/>
                                 <connections>
-                                    <action selector="blackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Jq-hp-8hm"/>
-                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uzV-jc-D0P"/>
+                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBM-Ae-dTW"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="colorImage" destination="rMh-kE-qw1" id="khG-Oh-AtS"/>
                         <outlet property="imageView" destination="rMh-kE-qw1" id="3Fr-hs-BEY"/>
                     </connections>
                 </viewController>

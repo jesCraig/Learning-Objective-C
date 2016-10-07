@@ -16,21 +16,6 @@
 
 @implementation ViewController
 
-//to match the two the image in the imageView and the color at the bottom of the screen
-//set a variable to each picture and to the corresponding color...then compare that with each other
-
-    
-
-
-
-//NSArray * images = [[NSArray alloc] initWithObjects:@"image1.png",@"image2.png",@"image3.png",@"image4.png",@"image5.png",nil];
-
-
-
-
-
-//Drawing Code------------------------------------------------------------------------------------------------------------
-
 - (void)viewDidLoad
 {
     red = 0.0/255.0;
@@ -39,8 +24,46 @@
     brush = 10.0;
     opacity = 1.0;
     
+    
+    NSMutableArray *images = [NSMutableArray arrayWithObjects:
+                              @"pinkCard.png",@"blackCard.png",
+                              @"blueCard.png",@"brownCard.png",
+                              @"greenCard.png",@"orangeCard.png",
+                              @"purpleCard.png", @"redCard.png",
+                              @"whiteCard", @"yellowCard", nil];
+    
     [super viewDidLoad];
 }
+
+//to match the two the image in the imageView and the color at the bottom of the screen
+//set a variable to each picture and to the corresponding color...then compare that with each other
+
+    - (IBAction)colorButtonPressed:(id)sender {
+        
+        UIButton * colorButtonPressed = (UIButton*)sender;
+        
+        //colorButtonPressed.tag
+            //black - tag 0
+            //blue - tag 1
+            //brown - tag 2
+            //green - tag 3
+            //yellow - tag 4
+            //orange - tag 5
+            //pink - tag 6
+            //purple - tag 7
+            //red - tag 8
+            //white - 9
+            
+}
+
+
+
+
+
+
+//Drawing Code------------------------------------------------------------------------------------------------------------
+
+
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
@@ -172,16 +195,10 @@
 // End Drawing Code------------------------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end
