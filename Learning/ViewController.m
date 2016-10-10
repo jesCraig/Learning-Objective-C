@@ -25,7 +25,7 @@
     opacity = 1.0;
     
     
-    NSMutableArray *images = [NSMutableArray arrayWithObjects:
+    NSMutableArray *imagesArray = [NSMutableArray arrayWithObjects:
                               @"pinkCard.png",@"blackCard.png",
                               @"blueCard.png",@"brownCard.png",
                               @"greenCard.png",@"orangeCard.png",
@@ -38,23 +38,56 @@
 //to match the two the image in the imageView and the color at the bottom of the screen
 //set a variable to each picture and to the corresponding color...then compare that with each other
 
+UIImageView *colorImage;
+
     - (IBAction)colorButtonPressed:(id)sender {
         
-        UIButton * colorButtonPressed = (UIButton*)sender;
+    UIButton * colorButtonPressed = (UIButton*)sender;
         
-        //colorButtonPressed.tag
+        switch(colorButtonPressed.tag){
             //black - tag 0
+            case 0:
+                
+                break;
             //blue - tag 1
+            case 1:
+                
+                break;
             //brown - tag 2
+            case 2:
+                
+                break;
             //green - tag 3
+            case 3:
+                
+                break;
             //yellow - tag 4
+            case 4:
+                
+                break;
             //orange - tag 5
+            case 5:
+                
+                break;
             //pink - tag 6
+            case 6:
+                
+                break;
             //purple - tag 7
+            case 7:
+                
+                break;
             //red - tag 8
+            case 8:
+                
+                break;
             //white - 9
-            
-}
+            case 9:
+                
+                break;
+        }
+        
+    }
 
 
 

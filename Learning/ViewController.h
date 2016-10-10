@@ -12,7 +12,7 @@
 //Drawing-------------------
 @interface ViewController : UIViewController {
     IBOutlet UIImageView *imageView;
-    NSMutableArray *imagesArray;
+    
     
         
     CGPoint lastPoint;
@@ -39,6 +39,7 @@
 //Color matching
 - (IBAction)colorButtonPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *colorImage;
+
 
 @end
 
