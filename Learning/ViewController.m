@@ -16,6 +16,8 @@
 
 @implementation ViewController
 
+NSMutableArray *imagesArray;
+
 - (void)viewDidLoad
 {
     red = 0.0/255.0;
@@ -25,12 +27,12 @@
     opacity = 1.0;
     
     
-    NSMutableArray *imagesArray = [NSMutableArray arrayWithObjects:
-                              @"pinkCard.png",@"blackCard.png",
-                              @"blueCard.png",@"brownCard.png",
-                              @"greenCard.png",@"orangeCard.png",
+    imagesArray = [NSMutableArray arrayWithObjects:
+                              @"blackCard.png", @"blueCard.png",
+                              @"brownCard.png", @"greenCard.png",@"yellowCard",
+                              @"orangeCard.png",@"pinkCard.png",
                               @"purpleCard.png", @"redCard.png",
-                              @"whiteCard", @"yellowCard", nil];
+                              @"whiteCard", nil];
     
     [super viewDidLoad];
 }
@@ -40,9 +42,16 @@
 
 UIImageView *colorImage;
 
+
     - (IBAction)colorButtonPressed:(id)sender {
         
+        
+        
     UIButton * colorButtonPressed = (UIButton*)sender;
+    
+    NSString *name = [NSString stringWithString:imagesArray[colorButtonPressed.tag]];
+        
+        NSLog(@"%@", name);
         
         switch(colorButtonPressed.tag){
             //black - tag 0
