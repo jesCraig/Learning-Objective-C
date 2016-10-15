@@ -8,13 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
-
-
 
 @implementation ViewController
+
 
 NSMutableArray *imagesArray;
 
@@ -29,10 +25,11 @@ NSMutableArray *imagesArray;
     
     imagesArray = [NSMutableArray arrayWithObjects:
                               @"blackCard.png", @"blueCard.png",
-                              @"brownCard.png", @"greenCard.png",@"yellowCard",
-                              @"orangeCard.png",@"pinkCard.png",
-                              @"purpleCard.png", @"redCard.png",
-                              @"whiteCard", nil];
+                              @"brownCard.png", @"greenCard.png",
+                              @"yellowCard.png", @"orangeCard.png",
+                              @"pinkCard.png", @"purpleCard.png",
+                              @"redCard.png", @"whiteCard.png", nil];
+    
     
     [super viewDidLoad];
 }
@@ -40,63 +37,49 @@ NSMutableArray *imagesArray;
 //to match the two the image in the imageView and the color at the bottom of the screen
 //set a variable to each picture and to the corresponding color...then compare that with each other
 
-UIImageView *colorImage;
 
+/*-(void)randomizeImages {
+    
+    //get random number
+    int randomImgNum = arc4random_uniform(10);
+    
+    //use random number to get an image from your array
+    UIImage *tempImg = [imagesArray objectAtIndex:randomImgNum];
+    
+    //add your UIImage to a UIImageView and place it on screen somewhere
+    UIImageView *colorImage = [[UIImageView alloc] initWithImage:tempImg];
+    
+    //define the center points you want to use
+    //colorImage.center = CGPointMake(163,75);
+    
+    [self.colorImage addSubview:colorImage];
+   // [colorImage release];
+    
+    
+    //increment your count
+    myImgCount = myImgCount+(randomImgNum+1);
+    
+    //check your count
+    if (myImgCount<10) {
+        [self randomizeImages];  //do it again if not yet at 10
+    }
+    
+}*/
 
-    - (IBAction)colorButtonPressed:(id)sender {
-        
-        
-        
+colorImage.image = [UIImage imageNamed: @"blackCard.png"];
+
+- (IBAction)colorButtonPressed:(id)sender {
+    
+    
     UIButton * colorButtonPressed = (UIButton*)sender;
     
     NSString *name = [NSString stringWithString:imagesArray[colorButtonPressed.tag]];
-        
-        NSLog(@"%@", name);
-        
-        switch(colorButtonPressed.tag){
-            //black - tag 0
-            case 0:
-                
-                break;
-            //blue - tag 1
-            case 1:
-                
-                break;
-            //brown - tag 2
-            case 2:
-                
-                break;
-            //green - tag 3
-            case 3:
-                
-                break;
-            //yellow - tag 4
-            case 4:
-                
-                break;
-            //orange - tag 5
-            case 5:
-                
-                break;
-            //pink - tag 6
-            case 6:
-                
-                break;
-            //purple - tag 7
-            case 7:
-                
-                break;
-            //red - tag 8
-            case 8:
-                
-                break;
-            //white - 9
-            case 9:
-                
-                break;
-        }
-        
-    }
+    
+    NSLog(@"%@", name);
+    
+    
+}
+
 
 
 

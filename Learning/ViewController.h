@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+int myImgCount;
 
 //Drawing-------------------
 @interface ViewController : UIViewController {
-    IBOutlet UIImageView *imageView;
-    
     
         
     CGPoint lastPoint;
