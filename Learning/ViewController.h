@@ -37,7 +37,8 @@ int myImgCount;
 
 //Color matching
 - (IBAction)colorButtonPressed:(id)sender;
-@property (weak, nonatomic) IBOutlet UIImageView *colorImage;
+@property (weak, nonatomic) IBOutlet UIImageView *colorImageView;
+
 
 
 @end

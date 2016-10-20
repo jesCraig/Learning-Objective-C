@@ -111,7 +111,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="colorImage" destination="tiD-OB-FIa" id="E3h-fe-LBq"/>
+                        <outlet property="colorImageView" destination="tiD-OB-FIa" id="tIx-tw-Ndg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

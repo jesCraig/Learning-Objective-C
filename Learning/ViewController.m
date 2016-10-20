@@ -13,9 +13,11 @@
 
 
 NSMutableArray *imagesArray;
+NSMutableArray *splatArray;
 
 - (void)viewDidLoad
 {
+    
     red = 0.0/255.0;
     green = 0.0/255.0;
     blue = 0.0/255.0;
@@ -24,58 +26,65 @@ NSMutableArray *imagesArray;
     
     
     imagesArray = [NSMutableArray arrayWithObjects:
-                              @"blackCard.png", @"blueCard.png",
-                              @"brownCard.png", @"greenCard.png",
-                              @"yellowCard.png", @"orangeCard.png",
-                              @"pinkCard.png", @"purpleCard.png",
-                              @"redCard.png", @"whiteCard.png", nil];
+                   @"blackCard.png", @"blueCard.png",
+                   @"brownCard.png", @"greenCard.png",
+                   @"yellowCard.png", @"orangeCard.png",
+                   @"pinkCard.png", @"purpleCard.png",
+                   @"redCard.png", @"whiteCard.png", nil];
+    
+    splatArray = [NSMutableArray arrayWithObjects:
+                  @"blackCard.png", @"blueCard.png",
+                  @"brownCard.png", @"greenCard.png",
+                  @"yellowCard.png", @"orangeCard.png",
+                  @"pinkCard.png", @"purpleCard.png",
+                  @"redCard.png", @"whiteCard.png", nil];
     
     
     [super viewDidLoad];
+    
+    int randomImgNum = arc4random_uniform(10);
+    self.colorImageView.image = [UIImage imageNamed: [imagesArray objectAtIndex: randomImgNum]];
+    
 }
 
-//to match the two the image in the imageView and the color at the bottom of the screen
-//set a variable to each picture and to the corresponding color...then compare that with each other
-
-
-/*-(void)randomizeImages {
-    
-    //get random number
+/*-(void)randomizeImages{
     int randomImgNum = arc4random_uniform(10);
+   
+    NSString *nameArrayObject = [NSString stringWithString:imagesArray[randomImgNum]];
+    NSLog(@"%@", nameArrayObject);
     
-    //use random number to get an image from your array
-    UIImage *tempImg = [imagesArray objectAtIndex:randomImgNum];
-    
-    //add your UIImage to a UIImageView and place it on screen somewhere
-    UIImageView *colorImage = [[UIImageView alloc] initWithImage:tempImg];
-    
-    //define the center points you want to use
-    //colorImage.center = CGPointMake(163,75);
-    
-    [self.colorImage addSubview:colorImage];
-   // [colorImage release];
-    
-    
-    //increment your count
-    myImgCount = myImgCount+(randomImgNum+1);
-    
-    //check your count
-    if (myImgCount<10) {
-        [self randomizeImages];  //do it again if not yet at 10
-    }
-    
-}*/
+    self.colorImageView.image = [UIImage imageNamed:[imagesArray objectAtIndex: randomImgNum]];
 
-colorImage.image = [UIImage imageNamed: @"blackCard.png"];
+}
+*/
 
 - (IBAction)colorButtonPressed:(id)sender {
     
     
     UIButton * colorButtonPressed = (UIButton*)sender;
+    int randomImgNum = arc4random_uniform(10);
     
     NSString *name = [NSString stringWithString:imagesArray[colorButtonPressed.tag]];
+    NSString *nameArrayObject = [NSString stringWithString:imagesArray[randomImgNum]];
+    NSString *splat = @"Splat Name";
+    NSString *cardColor = @"Card Color";
     
-    NSLog(@"%@", name);
+        NSLog(@"%@", splat);
+        NSLog(@"%@", name);
+        NSLog(@"%@", cardColor);
+        NSLog(@"%@", nameArrayObject);
+
+    
+    
+    
+   if(nameArrayObject == name){
+      
+        self.colorImageView.image = [UIImage imageNamed: @"smileyFace.jpg"];
+    }
+    
+    else if(name != nameArrayObject)
+        //[self randomizeImages];
+        self.colorImageView.image = [UIImage imageNamed:[imagesArray objectAtIndex: randomImgNum]];
     
     
 }
@@ -149,62 +158,62 @@ colorImage.image = [UIImage imageNamed: @"blackCard.png"];
 
 
 - (IBAction)pencilPressed:(id)sender {
-        
-        UIButton * PressedButton = (UIButton*)sender;
-        
-        switch(PressedButton.tag)
-        {
-            case 0:
-                red = 0.0/255.0;
-                green = 0.0/255.0;
-                blue = 0.0/255.0;
-                break;
-            case 1:
-                red = 105.0/255.0;
-                green = 105.0/255.0;
-                blue = 105.0/255.0;
-                break;
-            case 2:
-                red = 255.0/255.0;
-                green = 0.0/255.0;
-                blue = 0.0/255.0;
-                break;
-            case 3:
-                red = 0.0/255.0;
-                green = 0.0/255.0;
-                blue = 255.0/255.0;
-                break;
-            case 4:
-                red = 102.0/255.0;
-                green = 204.0/255.0;
-                blue = 0.0/255.0;
-                break;
-            case 5:
-                red = 102.0/255.0;
-                green = 255.0/255.0;
-                blue = 0.0/255.0;
-                break;
-            case 6:
-                red = 51.0/255.0;
-                green = 204.0/255.0;
-                blue = 255.0/255.0;
-                break;
-            case 7:
-                red = 160.0/255.0;
-                green = 82.0/255.0;
-                blue = 45.0/255.0;
-                break;
-            case 8:
-                red = 255.0/255.0;
-                green = 102.0/255.0;
-                blue = 0.0/255.0;
-                break;
-            case 9:
-                red = 255.0/255.0;
-                green = 255.0/255.0;
-                blue = 0.0/255.0;
-                break;
-        }
+    
+    UIButton * PressedButton = (UIButton*)sender;
+    
+    switch(PressedButton.tag)
+    {
+        case 0:
+            red = 0.0/255.0;
+            green = 0.0/255.0;
+            blue = 0.0/255.0;
+            break;
+        case 1:
+            red = 105.0/255.0;
+            green = 105.0/255.0;
+            blue = 105.0/255.0;
+            break;
+        case 2:
+            red = 255.0/255.0;
+            green = 0.0/255.0;
+            blue = 0.0/255.0;
+            break;
+        case 3:
+            red = 0.0/255.0;
+            green = 0.0/255.0;
+            blue = 255.0/255.0;
+            break;
+        case 4:
+            red = 102.0/255.0;
+            green = 204.0/255.0;
+            blue = 0.0/255.0;
+            break;
+        case 5:
+            red = 102.0/255.0;
+            green = 255.0/255.0;
+            blue = 0.0/255.0;
+            break;
+        case 6:
+            red = 51.0/255.0;
+            green = 204.0/255.0;
+            blue = 255.0/255.0;
+            break;
+        case 7:
+            red = 160.0/255.0;
+            green = 82.0/255.0;
+            blue = 45.0/255.0;
+            break;
+        case 8:
+            red = 255.0/255.0;
+            green = 102.0/255.0;
+            blue = 0.0/255.0;
+            break;
+        case 9:
+            red = 255.0/255.0;
+            green = 255.0/255.0;
+            blue = 0.0/255.0;
+            break;
+    }
 }
 
 - (IBAction)eraserPressed:(id)sender {
