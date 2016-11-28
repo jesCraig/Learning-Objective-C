@@ -13,7 +13,7 @@
 
 
 NSMutableArray *imagesArray;
-NSMutableArray *splatArray;
+NSMutableArray *numberArray;
 
 - (void)viewDidLoad
 {
@@ -32,20 +32,37 @@ NSMutableArray *splatArray;
                    @"pinkCard.png", @"purpleCard.png",
                    @"redCard.png", @"whiteCard.png", nil];
     
-    splatArray = [NSMutableArray arrayWithObjects:
-                  @"blackCard.png", @"blueCard.png",
-                  @"brownCard.png", @"greenCard.png",
-                  @"yellowCard.png", @"orangeCard.png",
-                  @"pinkCard.png", @"purpleCard.png",
-                  @"redCard.png", @"whiteCard.png", nil];
+    numberArray = [NSMutableArray arrayWithObjects:
+                  @"1Number", @"2Number",
+                  @"3Number", @"4Number",
+                  @"5Number", nil];
     
     
     [super viewDidLoad];
     
     int randomImgNum = arc4random_uniform(10);
     self.colorImageView.image = [UIImage imageNamed: [imagesArray objectAtIndex: randomImgNum]];
+    int numRandom = arc4random_uniform(5);
+    self.numberImageView.image = [UIImage imageNamed: [numberArray objectAtIndex: numRandom]];
     
 }
+
+- (IBAction)numberButtonPressed:(id)sender{
+    
+    UIButton * numberButtonPressed = (UIButton*)sender;
+    int randomImgNumber = arc4random_uniform(5);
+    
+    NSString *imgName = [NSString stringWithString:numberArray[numberButtonPressed.tag]];
+    NSString *nameArrayObject = [NSString stringWithString:numberArray[randomImgNumber]];
+    
+    NSLog(@"%@", imgName);
+    NSLog(@"%@", nameArrayObject);
+    
+    self.numberImageView.image = [UIImage imageNamed:[numberArray objectAtIndex: randomImgNumber]];
+}
+
+
+UIImageView *numberImageView;
 
 /*-(void)randomizeImages{
     int randomImgNum = arc4random_uniform(10);
@@ -233,6 +250,5 @@ NSMutableArray *splatArray;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end

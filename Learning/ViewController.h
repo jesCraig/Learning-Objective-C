@@ -39,7 +39,13 @@ int myImgCount;
 - (IBAction)colorButtonPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *colorImageView;
 
+//Number Matching-------------------
 
+- (IBAction)numberButtonPressed:(id)sender;
+
+
+@property (weak, nonatomic) IBOutlet
+    UIImageView *numberImageView;
 
 @end
 
